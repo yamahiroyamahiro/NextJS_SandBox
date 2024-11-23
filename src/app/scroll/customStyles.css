@@ -1,0 +1,27 @@
+.simplebar-outer {
+  position: relative;
+  padding-right: 0px; /* スクロールバーの幅分の余白を追加 */
+  margin-right: 10px;
+}
+
+.simplebar {
+  overflow: hidden; /* 内部のスクロールを隠す */
+}
+
+/* Y軸のスクロールバー */
+.simplebar-track.simplebar-vertical {
+  position: absolute;
+  right: -12px; /* Y軸スクロールバーを外に出す */
+  top: 0;
+  background: transparent; /* トラックの背景を透明に */
+  width: 8px; /* Y軸スクロールバーの幅を設定 */
+}
+
+/* X軸のスクロールバー */
+.simplebar-track.simplebar-horizontal {
+  position: absolute;
+  bottom: -12px; /* X軸スクロールバーを外に出す */
+  left: 0;
+  background: transparent; /* トラックの背景を透明に */
+  height: 8px; /* X軸スクロールバーの高さを設定 */
+}

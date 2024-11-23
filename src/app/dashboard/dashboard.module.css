@@ -1,0 +1,16 @@
+.btn{
+  display: block;
+  background-color: var(--thema-color);
+  margin:10px 0 10px 0;
+}
+
+#table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table th, #table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}

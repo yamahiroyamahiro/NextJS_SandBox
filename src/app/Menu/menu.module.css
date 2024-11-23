@@ -1,0 +1,11 @@
+.collapse-on {
+  width: 240px;
+  height: 40px;
+  transition: width 0.05s ease; /* アニメーションを追加 */
+}
+
+.collapse-off {
+  width: 40px;
+  height: 40px;
+  transition: width 0.05s ease; /* アニメーションを追加 */
+}

@@ -1,0 +1,9 @@
+query GetArticle($id:Int!){
+    article(id: $id){
+        id  
+        title
+        content
+        author
+        abstract
+    }
+}

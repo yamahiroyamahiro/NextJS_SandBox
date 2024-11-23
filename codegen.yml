@@ -1,0 +1,17 @@
+overwrite: true
+# schema:バックエンドのgraphqlサーバーのURLを指定する
+schema: "http://127.0.0.1:5000/graphql"
+# documents:フロントから実行するgraphqlの配置場所を指定する
+documents:
+  - "components/**/*.graphql"
+generates:
+  # ./generated/graphql.ts:は型情報が生成されるファイル
+  ./generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typed-document-node"
+    config:
+      avoidOptionals:
+        objet: true
+        field: true
