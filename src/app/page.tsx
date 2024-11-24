@@ -5,29 +5,31 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="m-4">
-      <h1 className="text-2xl">Home</h1>
-      <div className="flex flex-col gap-2">
-        <Link href="/about" className="underline">
-          Go To About
+    <div key={"content"} className="mb-4">
+      <header className="w-full h-16 flex items-center bg-slate-200 shadow-md px-4">
+        <h1 className="text-2xl">Home</h1>
+      </header>
+      <div className="flex flex-col gap-2 p-4">
+        <Link href="/about" className="underline hover:opacity-50">
+          About
         </Link>
-        <Link href="/chat" className="underline">
-          Go To Chat
+        <Link href="/chat" className="underline hover:opacity-50">
+          Chat
         </Link>
-        <Link href="/display" className="underline">
-          Go To Display
+        <Link href="/display" className="underline hover:opacity-50">
+          Display
         </Link>
-        <Link href="/csv" className="underline">
-          Go To CSV
+        <Link href="/csv" className="underline hover:opacity-50">
+          CSV
         </Link>
-        <Link href="/scroll" className="underline">
-          Go To SCROLL
+        <Link href="/scroll" className="underline hover:opacity-50">
+          SCROLL
         </Link>
-        <Link href="/dashboard" className="underline">
-          Go To DASHBOARD
+        <Link href="/dashboard" className="underline hover:opacity-50">
+          DASHBOARD
         </Link>
-        <Link href="/pdf" className="underline">
-          Go To PDF
+        <Link href="/pdf" className="underline hover:opacity-50">
+          PDF
         </Link>
       </div>
     </div>
