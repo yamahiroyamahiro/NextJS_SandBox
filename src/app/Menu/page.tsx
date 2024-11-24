@@ -11,7 +11,7 @@ const Page = () => {
   return (
     <>
       <Image
-        src={isCollapsed ? "/logo_habuku_collapse.png" : "/logo_habuku.png"}
+        src={isCollapsed ? "/next.svg" : "/vercel.svg"}
         alt="logo"
         width={isCollapsed ? 40 : 240}
         height={40}
