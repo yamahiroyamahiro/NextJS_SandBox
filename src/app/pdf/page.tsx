@@ -16,21 +16,14 @@ const PdfTestPage: NextPage = () => {
     html2canvas(target, { scale: 2.5 }).then((canvas) => {
       const imgData = canvas.toDataURL("image/svg", 1.0);
       let pdf = new jsPDF();
-      pdf.addImage(
-        imgData,
-        "SVG",
-        5,
-        10,
-        canvas.width / 18,
-        canvas.height / 18
-      );
+      pdf.addImage(imgData, "SVG", 5, 10, canvas.width / 18, canvas.height / 18);
       pdf.save(`test.pdf`);
     });
   };
 
   return (
     <>
-      <button type="button" onClick={pdhDownloadHandler}>
+      <button className="bg-blue-500 hover:bg-opacity-50 hover:cursor-pointer rounded-md shadow-lg text-white p-2" type="button" onClick={pdhDownloadHandler}>
         PDFファイルをダウンロードするボタン
       </button>
       <Component />

@@ -15,24 +15,15 @@ export const metadata: Metadata = {
   // },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
       <body className={`${inter.className}`}>
         <div className="flex h-screen ">
-          <div
-            id="header"
-            className="w-1/4 h-screen"
-            style={{ backgroundColor: "#f5f5f5" }}
-          >
-            <button></button>
+          <div id="header" className="w-1/6 h-screen" style={{ backgroundColor: "#f5f5f5" }}>
             <Menu />
           </div>
-          <div id="content" className="w-3/4 h-screen">
+          <div id="content" className="w-5/6 h-screen">
             {children}
           </div>
         </div>

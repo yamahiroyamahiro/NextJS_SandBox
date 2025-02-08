@@ -13,17 +13,19 @@ const Page = () => {
       <Image
         src={isCollapsed ? "/next.svg" : "/vercel.svg"}
         alt="logo"
-        width={isCollapsed ? 40 : 240}
+        width={isCollapsed ? 40 : 200}
         height={40}
-        className={`m-4 ${isCollapsed ? styles["collapse-off"] : styles["collapse-on"]}`}
+        className={`my-4 border-b border-gray-500 ${isCollapsed ? styles["collapse-off"] : styles["collapse-on"]}`}
       />
-      <div className="flex">
-        <RxDashboard />
-        {!isCollapsed && (
-          <Link href="/" className="underline">
-            Home <br />
-          </Link>
-        )}
+      <div className="pl-8 pt-4 h-full ">
+        <div className="flex justify-start items-center gap-2">
+          <RxDashboard />
+          {!isCollapsed && (
+            <Link href="/" className="underline">
+              Home <br />
+            </Link>
+          )}
+        </div>
       </div>
     </>
   );
